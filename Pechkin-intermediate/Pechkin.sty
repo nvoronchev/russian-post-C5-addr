@@ -1,0 +1,20 @@
+%%
+%% This is file `Pechkin.sty'
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ProvidesPackage{Pechkin}[2015/03/27 v0.1]
+
+\def\pedefault{Pechkin}
+
+%%
+%% Define font families.
+%%
+\DeclareRobustCommand\pefamily
+        {\not@math@alphabet\rmfamily\mathrm
+         \fontfamily\pedefault\selectfont}
+
+\DeclareTextFontCommand{\textpe}{\pefamily}
+
+%%
+%% End of file `Pechkin.sty'.

@@ -1,0 +1,12 @@
+%% This file is a part of Cyrillic PostScript package PSCyr v0.4d
+%% by Alexander Lebedev, 2000-2004
+%%
+
+\ProvidesFile{Pechkin.fd}
+   [2015/03/27 v0.1]
+
+\DeclareFontFamily{T2A}{Pechkin}{}
+
+\DeclareFontShape{T2A}{Pechkin}{m}{n}{<-> Pechkin}{}
+
+\endinput
