@@ -20,8 +20,8 @@
 * Обновить базу TeX: `sudo mktexlsr`
 
 ### Установка шрифта Pechkin
-* Скопировать директории dvips и fonts в дерево каталогов TeX'а: `sudo cp ./Pechkin/{dvips,fonts} /usr/local/share/texmf/`
-* Для `updmap` необходимо создать конфиг-файл: `sudo mkdir -p /etc/texmf/updmap.d/; sudo echo -e "# Pechkin\nMap Pechkin.map" > /etc/texmf/updmap.d/20Pechkin.cfg`
+* Скопировать директории dvips и fonts в дерево каталогов TeX'а: `sudo cp -a ./Pechkin/{dvips,fonts} /usr/local/share/texmf/`
+* Для `updmap` необходимо создать конфиг-файл: `sudo mkdir -p /etc/texmf/updmap.d/; echo -e "# Pechkin\nMap Pechkin.map" | sudo tee /etc/texmf/updmap.d/20Pechkin.cfg`
 * Обновить базу TeX: `sudo mktexlsr; sudo update-updmap; sudo mktexlsr; sudo updmap-sys; sudo mktexlsr`. Выполнять лучше из каталога, не относящегося к TeX'у.
 
 ## Использование
